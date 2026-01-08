@@ -18,12 +18,13 @@ const BlogPage = (props) => {
     <Layout disablePaddingBottom>
       <div className={styles.root}>
         <Hero
-          maxWidth={'400px'}
+          maxWidth={'500px'}
           image={toOptimizedImage('/blogCover.png')}
-          title={`The new standard of Closing`}
-          ctaLink={'read story'}
+          title={`Your Guide to Dating Success`}
+          subtitle={'Expert advice and proven tactics for modern dating'}
+          ctaLink={'start reading'}
           ctaTo={'/blog/sample'}
-          header={'design'}
+          header={'dating tips'}
         />
 
         <div className={styles.navContainer}>
@@ -37,25 +38,25 @@ const BlogPage = (props) => {
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Design
+            Conversation
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Collaboration
+            First Dates
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            Interview
+            Mindset
           </ThemeLink>
           <ThemeLink
             onClick={() => navigate('/blog/sample')}
             to={'/blog/sample'}
           >
-            News
+            Safety
           </ThemeLink>
         </div>
 
