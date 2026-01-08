@@ -30,11 +30,11 @@
   --standard-header: 'Inria Serif', serif;
   --standard-font: 'Inter', sans-serif;
   --brand-font: 'Yeseva One', cursive;
-  --standard-black: #000000;
+  --standard-black: #2D2D2D;
   --standard-white: #ffffff;
   --standard-grey: #e2e2e2;
   --standard-dark-grey: #545250;
-  --standard-light-grey: #FCFAF6;
+  --standard-light-grey: #FFF8F8;
   --grey-passthough: #979797;
   --grey-border: #A9A9A8;
   --grey-placeholder: #716868;
@@ -42,11 +42,15 @@
   --grey-disabled: #F2F2F2;
   --grey-chip: #F1F1F1;
   --grey-one: #D8D8D8;
-  --bg-grey: #F7F7F7;
-  --bg-dark: #383634;
+  --bg-grey: #FFF5F5;
+  --bg-dark: #4A3333;
   --bg-close-icon: #E9E7E3;
   --bg-light-gray: #e5e5e5;
-  --standard-gold: #B59F66;
+  --standard-gold: #C75B5B;
+  --primary-red: #C75B5B;
+  --primary-red-hover: #B04A4A;
+  --soft-rose: #E8A5A5;
+  --light-pink: #FFF0F0;
   --sale: #902F15;
   --error: #9A3515;
 

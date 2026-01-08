@@ -12,10 +12,10 @@
     { "value": "mandarin", "label": "普通话" }
   ],
   "social": {
-    "facebook": "https://www.facebook.com/MatterDesign/",
-    "instagram": "https://www.instagram.com/p/CVwMlChIWmW",
-    "twitter": "https://twitter.com/hellomatter",
-    "youtube": "https://www.youtube.com/channel/UCEOu94Haa--QmltsSawflXg"
+    "facebook": "https://www.facebook.com/",
+    "instagram": "https://www.instagram.com/",
+    "twitter": "https://twitter.com/",
+    "youtube": "https://www.youtube.com/"
   },
   "paymentOptions": {
     "visa": true,
@@ -24,14 +24,31 @@
   },
   "footerLinks": [
     {
-      "subTitle": "Info",
+      "subTitle": "Topics",
+      "links": [
+        {
+          "text": "Conversation Tips",
+          "link": "/blog"
+        },
+        {
+          "text": "First Date Ideas",
+          "link": "/blog"
+        },
+        {
+          "text": "Profile Optimization",
+          "link": "/blog"
+        }
+      ]
+    },
+    {
+      "subTitle": "Resources",
       "links": [
         {
           "text": "About Us",
           "link": "/about"
         },
         {
-          "text": "Journal",
+          "text": "All Articles",
           "link": "/blog"
         },
         {
@@ -50,86 +67,66 @@
         {
           "text": "Contact Us",
           "link": "/support#contact"
-        },
-        {
-          "text": "Shipping & Returns",
-          "link": "/support#returns"
-        },
-        {
-          "text": "How to use this theme",
-          "link": "/how-to-use"
         }
       ]
     }
   ],
   "headerLinks": [
     {
-      "menuLabel": "Shop",
-      "menuLink": "/shop",
+      "menuLabel": "Dating Tips",
+      "menuLink": "/blog",
       "category": [
         {
-          "categoryLabel": "woman",
+          "categoryLabel": "Getting Started",
           "submenu": [
             {
-              "menuLabel": "All clothing",
-              "menuLink": "/shop"
+              "menuLabel": "Profile Tips",
+              "menuLink": "/blog"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
+              "menuLabel": "First Messages",
+              "menuLink": "/blog"
             },
             {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
+              "menuLabel": "Conversation Starters",
+              "menuLink": "/blog"
             }
           ]
         },
         {
-          "categoryLabel": "men",
+          "categoryLabel": "Dating Success",
           "submenu": [
             {
-              "menuLabel": "All clothing",
-              "menuLink": "/shop"
+              "menuLabel": "First Date Ideas",
+              "menuLink": "/blog"
             },
             {
-              "menuLabel": "sweatshirts & hoodies",
-              "menuLink": "/shop"
+              "menuLabel": "Building Connection",
+              "menuLink": "/blog"
             },
             {
-              "menuLabel": "jackets",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "trousers",
-              "menuLink": "/shop"
-            },
-            {
-              "menuLabel": "pants",
-              "menuLink": "/shop"
+              "menuLabel": "Red Flags to Avoid",
+              "menuLink": "/blog"
             }
           ]
         },
         {
-          "categoryLabel": "accessories",
+          "categoryLabel": "Mindset",
           "submenu": [
             {
-              "menuLabel": "caps & scarves",
-              "menuLink": "/shop"
+              "menuLabel": "Building Confidence",
+              "menuLink": "/blog"
             },
             {
-              "menuLabel": "bags",
-              "menuLink": "/shop"
+              "menuLabel": "Self-Improvement",
+              "menuLink": "/blog"
             }
           ]
         }
       ]
     },
     {
-      "menuLabel": "journal",
+      "menuLabel": "Articles",
       "menuLink": "/blog",
       "category": null
     },
@@ -141,36 +138,21 @@
   ],
   "filters": [
     {
-      "category": "colour",
+      "category": "topic",
       "items": [
-        { "name": "Black", "value": true },
-        { "name": "Green", "value": false },
-        { "name": "Dark Blue", "value": false },
-        { "name": "Blue", "value": true },
-        { "name": "Grey", "value": false },
-        { "name": "Red", "value": false }
-      ]
-    },
-
-    {
-      "category": "size",
-      "items": [
-        { "name": "XXS", "value": false },
-        { "name": "XS", "value": false },
-        { "name": "S", "value": false },
-        { "name": "M", "value": false },
-        { "name": "L", "value": false },
-        { "name": "XL", "value": false },
-        { "name": "XXL", "value": false },
-        { "name": "Onesize", "value": false }
+        { "name": "Conversation", "value": true },
+        { "name": "First Dates", "value": false },
+        { "name": "Profiles", "value": false },
+        { "name": "Mindset", "value": true },
+        { "name": "Safety", "value": false }
       ]
     },
     {
-      "category": "gender",
+      "category": "experience",
       "items": [
-        { "name": "Male", "value": false },
-        { "name": "Female", "value": false },
-        { "name": "Unisex", "value": false }
+        { "name": "Beginner", "value": false },
+        { "name": "Intermediate", "value": false },
+        { "name": "Advanced", "value": false }
       ]
     }
   ]
