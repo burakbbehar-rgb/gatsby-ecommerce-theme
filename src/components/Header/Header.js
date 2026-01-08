@@ -27,11 +27,18 @@ const Header = (prop) => {
   const [search, setSearch] = useState('');
 
   const searchRef = createRef();
-  const bannerMessage = 'Free shipping worldwide';
+  
+  // Dating temasına uygun banner mesajı
+  const bannerMessage = '💕 Discover proven dating strategies that actually work';
+  
+  // Dating taktikleri için arama önerileri
   const searchSuggestions = [
-    'Oversize sweaters',
-    'Lama Pajamas',
-    'Candles Cinnamon',
+    'First date tips',
+    'Conversation starters',
+    'Online profile optimization',
+    'Texting strategies',
+    'Body language secrets',
+    'Confidence building',
   ];
 
   const handleHover = (navObject) => {
@@ -111,7 +118,6 @@ const Header = (prop) => {
             role={'presentation'}
             onClick={() => {
               setMobileMenu(!mobileMenu);
-              // setDepth(0);
             }}
             className={styles.burgerIcon}
           >
@@ -120,35 +126,39 @@ const Header = (prop) => {
           <Brand />
           <div className={styles.actionContainers}>
             <button
-              aria-label="Search"
+              aria-label="Search Dating Tips"
               className={`${styles.iconButton} ${styles.iconContainer}`}
               onClick={() => {
                 setShowSearch(!showSearch);
               }}
+              title="Search dating tactics and tips"
             >
               <Icon symbol={'search'}></Icon>
             </button>
             <Link
-              aria-label="Favorites"
-              href="/account/favorites"
+              aria-label="Saved Tactics"
+              to="/account/favorites"
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
+              title="Your saved dating tactics"
             >
               <Icon symbol={'heart'}></Icon>
             </Link>
             <Link
-              aria-label="Orders"
-              href={isAuth() ? '/login' : '/account/orders/'}
+              aria-label="My Account"
+              to={isAuth() ? '/account/dashboard/' : '/login'}
               className={`${styles.iconContainer} ${styles.hideOnMobile}`}
+              title="Access your account"
             >
               <Icon symbol={'user'}></Icon>
             </Link>
             <button
-              aria-label="Cart"
+              aria-label="Resources"
               className={`${styles.iconButton} ${styles.iconContainer} ${styles.bagIconContainer}`}
               onClick={() => {
                 setShowMiniCart(true);
                 setMobileMenu(false);
               }}
+              title="View your saved resources"
             >
               <Icon symbol={'bag'}></Icon>
               <div className={styles.bagNotification}>
@@ -167,19 +177,20 @@ const Header = (prop) => {
             showSearch === true ? styles.show : styles.hide
           }`}
         >
-          <h4>What are you looking for?</h4>
+          <h4>What dating tactics are you looking for?</h4>
           <form className={styles.searchForm} onSubmit={(e) => handleSearch(e)}>
             <FormInputField
               ref={searchRef}
               icon={'arrow'}
               id={'searchInput'}
               value={search}
-              placeholder={''}
+              placeholder={'Search for dating tips, strategies, advice...'}
               type={'text'}
               handleChange={(_, e) => setSearch(e)}
             />
           </form>
           <div className={styles.suggestionContianer}>
+            <p className={styles.suggestionTitle}>Popular searches:</p>
             {searchSuggestions.map((suggestion, index) => (
               <p
                 role={'presentation'}
@@ -219,7 +230,7 @@ const Header = (prop) => {
         </Container>
       </div>
 
-      {/* minicart container */}
+      {/* minicart container - now resources cart */}
       <Drawer visible={showMiniCart} close={() => setShowMiniCart(false)}>
         <MiniCart />
       </Drawer>
